@@ -28,11 +28,11 @@ h1 {
   font-size: 140px;
 }
 
-h2 {
+h2, #arrows.small {
   font-size: 105px;
 }
 
-h3, .medium, #theme {
+h3, .medium, #theme, .action {
   font-size: 84px;
 }
 
@@ -40,19 +40,63 @@ h3, .medium, #theme {
   margin-bottom: 0.5em;
 }
 
-.hfire-link {
+.no-space {
+  margin-bottom: 0px;
+}
+
+.action-link, .hfire-link {
   color:white;
   text-decoration:none;
-  padding: 20px;
   cursor: pointer;
 }
 
-.hfire-link:hover {
+.hfire-link {
+  padding: 20px;
+}
+
+.hfire-link:hover, .action-link:hover {
   text-decoration:underline;
 }
 
-.standup {
-  display:none;
+#trance {
+  font-family: Neuropol, 'Michroma', AvenirNext-Heavy, 'Arial Black', sans-serif;
+}
+
+#stress, .stress {
+  font-family: 'Barlow', Futura XBlkIt BT, AvenirNext-HeavyItalic, 'Arial Black', sans-serif;
+  color: red;
+}
+
+#stress a {
+  color: red;
+}
+
+.break-list {
+  display:grid;
+  grid-template-columns:auto auto;
+}
+
+.two-list {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.three-list {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+#arrows {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.arrow {
+  font-style:normal;
 }
 
 .theme1 {
@@ -104,7 +148,7 @@ h3, .medium, #theme {
   h1 {
     font-size: 100px;
   }
-  h2 {
+  h2, #arrows.small {
     font-size: 75px;
   }
   h3, .medium, #theme {
@@ -119,7 +163,7 @@ h3, .medium, #theme {
   h1 {
     font-size: 80px;
   }
-  h2 {
+  h2, #arrows.small {
     font-size: 60px;
   }
   h3, .medium, #theme {
@@ -131,7 +175,7 @@ h3, .medium, #theme {
   h1 {
     font-size: 60px;
   }
-  h2 {
+  h2, #arrows.small {
     font-size: 44px;
   }
   h3, .medium, #theme {
@@ -146,7 +190,7 @@ h3, .medium, #theme {
   h1 {
     font-size: 40px;
   }
-  h2 {
+  h2, #arrows.small {
     font-size: 30px;
   }
   h3, .medium, #theme {
@@ -154,5 +198,11 @@ h3, .medium, #theme {
   }
   body {
     font-size: 20px;
+  }
+  @media only screen and (max-width: 413px) {
+    .three-list, .four-list {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+    }
   }
 }
