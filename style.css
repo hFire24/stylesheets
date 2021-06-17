@@ -1,0 +1,158 @@
+body {
+  background-color: black;
+  font-family: 'Barlow Semi Condensed', Futura MdCn BT, AvenirNextCondensed-Italic, sans-serif;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: darken(inherit, 10%);
+}
+
+h1, h2, h3, strong, .theme10 {
+  font-family: 'Barlow Semi Condensed', Futura XBlkCnIt BT, AvenirNextCondensed-HeavyItalic, sans-serif;
+}
+
+h1, h2, h3 {
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 140px;
+}
+
+h2 {
+  font-size: 105px;
+}
+
+h3, .medium, #theme {
+  font-size: 84px;
+}
+
+.space {
+  margin-bottom: 0.5em;
+}
+
+.hfire-link {
+  color:white;
+  text-decoration:none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.hfire-link:hover {
+  text-decoration:underline;
+}
+
+.standup {
+  display:none;
+}
+
+.theme1 {
+  background-color: hsl(122, 30%, 32%);
+  color: hsl(104, 22%, 87%);
+}
+
+.theme1 a {
+  color: hsl(104, 22%, 87%);
+}
+
+.theme2 {
+  background-color: hsl(227, 30%, 32%);
+  color: hsl(209, 22%, 87%);
+}
+
+.theme2 a {
+  color: hsl(209, 22%, 87%);
+}
+
+.theme3 {
+  background-color: hsl(317, 30%, 32%);
+  color: hsl(299, 22%, 87%);
+}
+
+.theme3 a {
+  color: hsl(299, 22%, 87%);
+}
+
+.theme4 {
+  background-color: hsl(47, 21%, 40%);
+  color: hsl(29, 22%, 87%);
+}
+
+.theme4 a {
+  color: hsl(29, 22%, 87%);
+}
+
+.theme5 {
+  background-color: hsl(0, 0%, 32%);
+  color: hsl(0, 0%, 87%);
+}
+
+.theme5 a {
+  color: hsl(0, 0%, 87%);
+}
+
+@media only screen and (max-width: 1702px) {
+  h1 {
+    font-size: 100px;
+  }
+  h2 {
+    font-size: 75px;
+  }
+  h3, .medium, #theme {
+    font-size: 60px;
+  }
+  body {
+    font-size:40px;
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  h3, .medium, #theme {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 851px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  h3, .medium, #theme {
+    font-size: 36px;
+  }
+  body {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3, .medium, #theme {
+    font-size: 25px;
+  }
+  body {
+    font-size: 20px;
+  }
+}
