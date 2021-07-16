@@ -54,8 +54,13 @@ h3, .medium, #theme, .action {
   padding: 20px;
 }
 
-.hfire-link:hover, .action-link:hover {
+.hfire-link:hover, .action-link:hover, .hub-list > .hfire-link.close:hover {
   text-decoration:underline;
+}
+
+.hfire-link.forward {
+  font-weight:bold;
+  color:hsl(200, 100%, 75%);
 }
 
 #trance {
@@ -84,6 +89,31 @@ h3, .medium, #theme, .action {
 .three-list {
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
+}
+
+.four-list {
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+}
+
+.hub-list {
+  display:none;
+  grid-template-columns:auto;
+}
+
+.hub-list > span {
+  margin-bottom: 30px;
+}
+
+.hub-list > .hfire-link {
+  font-weight:bold;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+.hub-list > .hfire-link.close {
+  color:red;
+  text-decoration:none;
 }
 
 #arrows {
