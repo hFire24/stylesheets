@@ -116,6 +116,10 @@ h3, .medium, #theme, .action {
   text-decoration:none;
 }
 
+.small {
+  font-size:45px;
+}
+
 #arrows {
   position:absolute;
   bottom:0;
@@ -187,6 +191,9 @@ h3, .medium, #theme, .action {
   body {
     font-size:40px;
   }
+  .small {
+    font-size:30px;
+  }
 }
 
 @media only screen and (max-width: 1135px) {
@@ -211,7 +218,7 @@ h3, .medium, #theme, .action {
   h3, .medium, #theme {
     font-size: 36px;
   }
-  body {
+  body, .small {
     font-size: 30px;
   }
 }
@@ -226,7 +233,7 @@ h3, .medium, #theme, .action {
   h3, .medium, #theme {
     font-size: 25px;
   }
-  body {
+  body, .small {
     font-size: 20px;
   }
   @media only screen and (max-width: 413px) {
